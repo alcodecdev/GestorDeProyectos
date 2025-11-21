@@ -53,7 +53,7 @@ $(document).ready(function(){
         showProyects();
     });
 
-    /* Gestion de eventos de filtrado, el .change s eutiliza para detectar
+    /* Gestion de eventos de filtrado, el .change se utiliza para detectar
     cambios en el valor de un elemento
     */
     $("#filtroPrioridad, #filtroEstado").on("change", function(){
@@ -103,7 +103,8 @@ $(document).ready(function(){
             $("#listaProyectos").append('<p class="noResultados">No hay tickets que coincidan con os filtros seleccionados</p>');
         }
 
-   /*     proyectos.forEach(p => {
+   /* Este codigo comentado muestra el nombre y descripcion del proyecto como los botones de completar y eliminar
+   proyectos.forEach(p => {
             // Determina la clase de prioridad
             if (p.prioridad === "baja"){
                 prioridadClase = "prioridad-baja";

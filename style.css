@@ -1,0 +1,159 @@
+/* ======== Estilos generales ======== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* ======== Formulario ======== */
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    background: #2a7ae4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1e5cad;
+}
+
+/* ======== Filtros ======== */
+#filtros {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#filtros h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+}
+
+#filtros select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+#resetFiltros {
+    padding: 6px 10px;
+    border: none;
+    background: #777;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 32px;
+}
+
+#resetFiltros:hover {
+    background: #555;
+}
+
+/* Lista de proyectos*/
+#listaProyectos .proyecto {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 6px solid #2a7ae4;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.proyecto.completada {
+    opacity: 0.7;
+    border-left-color: #4caf50;
+}
+
+.proyecto h3 {
+    margin-top: 0;
+}
+
+/*Prioridades*/
+.prioridad-baja {
+    color: green;
+}
+
+.prioridad-media {
+    color: orange;
+}
+
+.prioridad-alta {
+    color: red;
+}
+
+/*otones dentro de cada proyecto*/
+.proyecto .botones button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.proyecto .botones .completar {
+    background: #4caf50;
+    color: white;
+}
+
+.proyecto .botones .completar:hover {
+    background: #3c8d3f;
+}
+
+.proyecto .botones .eliminar {
+    background: #e53935;
+    color: white;
+}
+
+.proyecto .botones .eliminar:hover {
+    background: #b3201d;
+}
+
+/*Mensaje de no resultados*/
+.noResultados {
+    background: #fff3cd;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    border-radius: 4px;
+    margin-top: 10px;
+}
