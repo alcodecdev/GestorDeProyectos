@@ -3,7 +3,7 @@ $(document).ready(function(){
     // Inicializacion de la lista de proyectos
     let proyectos = JSON.parse(localStorage.getItem("proyectos")) || [];
 
-    //Variables de filtrado
+    //Variables de filtrado, cogo la predeterminada que es todos
     let filtroPrioridad="todos";
     let filtroEstado="todos";
 
@@ -65,9 +65,11 @@ $(document).ready(function(){
 
     //Reseteo el fiiltrado de proyectos
     $("#resetFiltros").on("click", function(){
+        //Lo vuelvo a dar valor porque no me lo detecta
         filtroPrioridad = "todos";
         filtroEstado = "todos";
 
+        //Le asigno el valor, para que cuando lo pulse se restablezca a predeterminado
         $("#filtroPrioridad").val(filtroPrioridad);
         $("#filtroEstado").val(filtroEstado);
         showProyects();
